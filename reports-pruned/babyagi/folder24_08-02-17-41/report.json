@@ -1,0 +1,14 @@
+{
+  "command": "agbenchmark start",
+  "git_commit_sha": "16f1b9519fea5543695203be0262a1b41c77cbba",
+  "completion_time": "2023-08-02-17:43",
+  "benchmark_start_time": "2023-08-02-17:41",
+  "metrics": {
+    "run_time": "89.86 seconds",
+    "highest_difficulty": "No successful tests"
+  },
+  "tests": {},
+  "config": {
+    "workspace": "babycoder/playground"
+  }
+}

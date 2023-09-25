@@ -1,0 +1,116 @@
+{
+  "command": "agbenchmark start",
+  "completion_time": "2023-07-30-23:07",
+  "benchmark_start_time": "2023-07-30-22:53",
+  "metrics": {
+    "run_time": "847.99 seconds",
+    "highest_difficulty": "advanced: 5"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Print the the capital of America to a .txt file",
+      "answer": "Washington",
+      "description": "Tests the writing to file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "success_%": 100,
+        "run_time": "49.462 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/interface/read_file/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the string 'random string' before any existing text to the file called file_to_check.txt",
+      "answer": "random string Hello World!",
+      "description": "This reads the file quickly",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "success_%": 100,
+        "run_time": "17.572 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicMemory": {
+      "data_path": "agbenchmark/challenges/memory/m1_id/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "2314",
+      "description": "Tests ability for the agent to remember information between each action. An id is presented initially and the agent has to remember it after reading 4 other files",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "success_%": 100,
+        "run_time": "60.664 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestRememberMultipleIds": {
+      "data_path": "agbenchmark/challenges/memory/m2_multiple/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "3145\n3791\n9317\n9471",
+      "description": "Tests ability for the agent to remember information between each action. Multiple ids are presented in different files and the last file instructs the agent to write these ids into another file.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "success_%": 100,
+        "run_time": "34.71 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestRememberMultipleWithNoise": {
+      "data_path": "agbenchmark/challenges/memory/m3_noise/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "3145\n3791\n9317\n9471",
+      "description": "Tests ability for the agent to remember information between each action. Multiple ids are presented in different files and the last file instructs the agent to write these ids into another file. Some noise is also added to the files to test the agent's ability to filter out noise.",
+      "metrics": {
+        "difficulty": "intermediate",
+        "success": true,
+        "success_%": 100,
+        "run_time": "16.731 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestRememberMultiplePhrasesWithNoise": {
+      "data_path": "agbenchmark/challenges/memory/m4_phrases/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "The purple elephant danced on a rainbow while eating a taco\nThe sneaky toaster stole my socks and ran away to Hawaii\nMy pet rock sings better than Beyoncé on Tuesdays\nThe giant hamster rode a unicycle through the crowded mall",
+      "description": "Tests ability for the agent to remember information between each action. Multiple phrases are presented in different files and the last file instructs the agent to write these phrases into another file. Some noise is also added to the files to test the agent's ability to filter out noise.",
+      "metrics": {
+        "difficulty": "advanced",
+        "success": true,
+        "success_%": 100,
+        "run_time": "63.941 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "workspace"
+  }
+}

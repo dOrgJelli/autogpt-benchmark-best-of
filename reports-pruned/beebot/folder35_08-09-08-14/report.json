@@ -1,0 +1,35 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/7ae56bb23177c3411b961120a794f3ed3d098183",
+  "agent_git_commit_sha": "https://github.com/AutoPackAI/beebot/tree/f91f8e3c65d6047db32f3a32f1c4997ac0f02516",
+  "completion_time": "2023-08-09-08:22",
+  "benchmark_start_time": "2023-08-09-08:14",
+  "metrics": {
+    "run_time": "474.75 seconds",
+    "highest_difficulty": "basic: 2"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the word 'Washington' to a .txt file",
+      "answer": "The word 'Washington', printed to a .txt file named anything",
+      "description": "Tests the agents ability to write to a file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 60,
+        "cost": 0.021793,
+        "run_time": "60.008 seconds"
+      },
+      "reached_cutoff": true
+    }
+  },
+  "config": {
+    "workspace": "workspace"
+  }
+}

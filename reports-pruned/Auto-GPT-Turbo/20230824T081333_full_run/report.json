@@ -1,0 +1,189 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/e8a13867182ea352707ddef735c9145578fec309",
+  "agent_git_commit_sha": "https://github.com/lc0rp/Auto-GPT-Turbo/tree/edf737bfa56be76d5475eeb901a8867ac1e78185",
+  "completion_time": "2023-08-24T08:36:16+00:00",
+  "benchmark_start_time": "2023-08-24T08:13:33+00:00",
+  "metrics": {
+    "run_time": "1360.5 seconds",
+    "highest_difficulty": "advanced: 5"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the word 'Washington' to a .txt file",
+      "answer": "The word 'Washington', printed to a .txt file named anything",
+      "description": "Tests the agents ability to write to a file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.13458019999999998,
+        "run_time": "32.916 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/interface/search/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste all of the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.08832,
+        "run_time": "49.496 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/interface/read_file/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Read the file called file_to_read.txt and write its content to a file called output.txt",
+      "answer": "The content of output.txt should be 'Hello World!'",
+      "description": "Tests the ability for an agent to read a file.",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.08742079999999999,
+        "run_time": "29.089 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestPlanCreation": {
+      "data_path": "agbenchmark/challenges/content_gen/2_plan/data.json",
+      "is_regression": false,
+      "category": [
+        "content_gen"
+      ],
+      "task": "As an agent powered by a large language model, create a plan for yourself based on the task of booking a flight to Toronto. Output this plan into a .txt file.",
+      "answer": "1. Search for flights to Toronto.\n2. Select the cheapest flight.\n3. Book the flight.\n4. Pay for the flight.\n5. Confirm the flight.",
+      "description": "Tests ability to generate content based on the content of 2 files.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.1483356,
+        "run_time": "49.754 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicMemory": {
+      "data_path": "agbenchmark/challenges/memory/m1_id/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "2314",
+      "description": "Tests ability for the agent to remember information between each action. An id is presented initially and the agent has to remember it after reading 4 other files",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": null,
+        "run_time": "77.895 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestDebugSimpleTypoWithGuidance": {
+      "data_path": "agbenchmark/challenges/code/c2_debug_suite/d2.1_guided/data.json",
+      "is_regression": false,
+      "category": [
+        "code",
+        "iterate"
+      ],
+      "task": "1- Run test.py.\n2- Read sample_code.py.\n3- Modify sample_code.py.\nRepeat step 1, 2 and 3 until test.py runs without errors.\n",
+      "answer": "[0, 1] [2, 5] [0, 3]",
+      "description": "Tests ability for the agent to debug python code with a simple typo in it.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.1673109,
+        "run_time": "75.372 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestRememberMultipleIds": {
+      "data_path": "agbenchmark/challenges/memory/m2_multiple/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "3145\n3791\n9317\n9471",
+      "description": "Tests ability for the agent to remember information between each action. Multiple ids are presented in different files and the last file instructs the agent to write these ids into another file.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": null,
+        "run_time": "88.071 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestRememberMultipleIdsWithNoise": {
+      "data_path": "agbenchmark/challenges/memory/m3_noise/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "3145\n3791\n9317\n9471",
+      "description": "Tests ability for the agent to remember information between each action. Multiple ids are presented in different files and the last file instructs the agent to write these ids into another file. Some noise is also added to the files to test the agent's ability to filter out noise.",
+      "metrics": {
+        "difficulty": "intermediate",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": null,
+        "run_time": "97.42 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestRememberMultiplePhrasesWithNoise": {
+      "data_path": "agbenchmark/challenges/memory/m4_phrases/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "The purple elephant danced on a rainbow while eating a taco\nThe sneaky toaster stole my socks and ran away to Hawaii\nMy pet rock sings better than Beyoncé on Tuesdays\nThe giant hamster rode a unicycle through the crowded mall",
+      "description": "Tests ability for the agent to remember information between each action. Multiple phrases are presented in different files and the last file instructs the agent to write these phrases into another file. Some noise is also added to the files to test the agent's ability to filter out noise.",
+      "metrics": {
+        "difficulty": "advanced",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": 0.7750629999999998,
+        "run_time": "109.886 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "auto_gpt_workspace",
+    "entry_path": "agbenchmark.benchmarks"
+  }
+}

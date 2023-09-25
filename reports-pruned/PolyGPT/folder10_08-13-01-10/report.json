@@ -1,0 +1,55 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/3ab57f13a96dffaee65868eba5e2d989dd4c8a79",
+  "agent_git_commit_sha": "https://github.com/polywrap/PolyGPT/tree/a79dee2efd254573bdfee76fe113497ab453597a",
+  "completion_time": "2023-08-13-01:19",
+  "benchmark_start_time": "2023-08-13-01:10",
+  "metrics": {
+    "run_time": "533.88 seconds",
+    "highest_difficulty": "interface: 1"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the word 'Washington' to a .txt file",
+      "answer": "The word 'Washington', printed to a .txt file named anything",
+      "description": "Tests the agents ability to write to a file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 40,
+        "cost": 0.013765000000000001,
+        "run_time": "16.83 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/interface/read_file/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Read the file called file_to_read.txt and write its content to a file called output.txt",
+      "answer": "The content of output.txt should be 'Hello World!'",
+      "description": "Tests the ability for an agent to read a file.",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 30,
+        "cost": 0.042077,
+        "run_time": "38.303 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "workspace",
+    "entry_path": "agbenchmark.benchmarks"
+  }
+}

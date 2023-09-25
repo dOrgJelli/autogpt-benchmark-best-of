@@ -1,0 +1,112 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/7ae56bb23177c3411b961120a794f3ed3d098183",
+  "agent_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT/tree/3a2d08fb415071cc94dd6fcee24cfbdd1fb487dd",
+  "completion_time": "2023-08-09-08:24",
+  "benchmark_start_time": "2023-08-09-08:15",
+  "metrics": {
+    "run_time": "544.03 seconds",
+    "highest_difficulty": "basic: 2"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the word 'Washington' to a .txt file",
+      "answer": "The word 'Washington', printed to a .txt file named anything",
+      "description": "Tests the agents ability to write to a file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.060629999999999996,
+        "run_time": "30.259 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/interface/search/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste all of the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.10100999999999999,
+        "run_time": "45.415 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestPlanCreation": {
+      "data_path": "agbenchmark/challenges/content_gen/2_plan/data.json",
+      "is_regression": true,
+      "category": [
+        "content_gen"
+      ],
+      "task": "As an agent powered by a large language model, create a plan for yourself to execute on based on the task of booking a flight to Toronto. Output this plan into a .txt file.",
+      "answer": "1. Search for flights to Toronto.\n2. Select the cheapest flight.\n3. Book the flight.\n4. Pay for the flight.\n5. Confirm the flight.",
+      "description": "Tests ability to generate content based on the content of 2 files.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.07417099999999999,
+        "run_time": "61.983 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestBasicRetrieval": {
+      "data_path": "agbenchmark/challenges/retrieval/r1_book_price/data.json",
+      "is_regression": true,
+      "category": [
+        "retrieval"
+      ],
+      "task": "Write the price of the book in this url 'http://books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "Specifies specific website to retrieve website from.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.14138649999999997,
+        "run_time": "55.194 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestAdaptLink": {
+      "data_path": "agbenchmark/challenges/adapatability/a3_book_price/data.json",
+      "is_regression": false,
+      "category": [
+        "adaptability"
+      ],
+      "task": "Write the price of the book in this url 'books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "An advanced version of this -> remove.html as well. Same as TestBasicRetrieval but link is slightly broken, supposed to be http:// at the start.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "attempted": true,
+        "success_%": 40,
+        "cost": 0.1321165,
+        "run_time": "60.022 seconds"
+      },
+      "reached_cutoff": true
+    }
+  },
+  "config": {
+    "workspace": "auto_gpt_workspace",
+    "entry_path": "agbenchmark.benchmarks"
+  }
+}

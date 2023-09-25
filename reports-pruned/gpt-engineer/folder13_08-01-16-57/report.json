@@ -1,0 +1,32 @@
+{
+  "command": "agbenchmark start",
+  "completion_time": "2023-08-01-17:03",
+  "benchmark_start_time": "2023-08-01-16:57",
+  "metrics": {
+    "run_time": "314.78 seconds",
+    "highest_difficulty": "interface: 1"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Print the the capital of America to a .txt file",
+      "answer": "Washington",
+      "description": "Tests the writing to file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "success_%": 85.71,
+        "cost": null,
+        "run_time": "60.005 seconds"
+      },
+      "reached_cutoff": true
+    }
+  },
+  "config": {
+    "workspace": "projects/my-new-project/workspace"
+  }
+}

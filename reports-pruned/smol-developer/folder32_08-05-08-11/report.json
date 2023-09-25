@@ -1,0 +1,55 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/6c907932541aaccbe71cafda8d81cc4e09b840b5",
+  "agent_git_commit_sha": "https://github.com/merwanehamadi/developer/tree/a23d01369cea976e80b7889fdbf1096619471301",
+  "completion_time": "2023-08-05-08:13",
+  "benchmark_start_time": "2023-08-05-08:11",
+  "metrics": {
+    "run_time": "143.7 seconds",
+    "highest_difficulty": "basic: 2"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Print the the capital of America to a .txt file",
+      "answer": "Washington",
+      "description": "Tests the writing to file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.000483,
+        "run_time": "5.742 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestPlanCreation": {
+      "data_path": "agbenchmark/challenges/content_gen/2_plan/data.json",
+      "is_regression": false,
+      "category": [
+        "content_gen"
+      ],
+      "task": "As an agent powered by a large language model, create a plan for yourself to execute on based on the task of booking a flight to Toronto. Output this plan into a .txt file.",
+      "answer": "1. Search for flights to Toronto.\n2. Select the cheapest flight.\n3. Book the flight.\n4. Pay for the flight.\n5. Confirm the flight.",
+      "description": "Tests ability to generate content based on the content of 2 files.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 80,
+        "cost": 0.0035340000000000002,
+        "run_time": "50.918 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "generated",
+    "entry_path": "agbenchmark.benchmarks"
+  }
+}

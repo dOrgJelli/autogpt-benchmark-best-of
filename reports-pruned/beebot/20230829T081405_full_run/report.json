@@ -1,0 +1,169 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/6715b462fd26d12999fe47fe7807f449c6487070",
+  "agent_git_commit_sha": "https://github.com/AutoPackAI/beebot/tree/59d4e93c133612a0319d135bb0eb08bbcead9fa2",
+  "completion_time": "2023-08-29T08:44:40+00:00",
+  "benchmark_start_time": "2023-08-29T08:14:05+00:00",
+  "metrics": {
+    "run_time": "1834.82 seconds",
+    "highest_difficulty": "novice: 3"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the word 'Washington' to a .txt file",
+      "answer": "The word 'Washington', printed to a .txt file named anything",
+      "description": "Tests the agents ability to write to a file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 90,
+        "cost": 0.028171,
+        "run_time": "60.008 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/interface/search/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste all of the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 80,
+        "cost": 0.035444,
+        "run_time": "120.007 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/interface/read_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Read the file called file_to_read.txt and write its content to a file called output.txt",
+      "answer": "The content of output.txt should be 'Hello World!'",
+      "description": "Tests the ability for an agent to read a file.",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 70,
+        "cost": 0.051224000000000006,
+        "run_time": "60.008 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestBasicRetrieval": {
+      "data_path": "agbenchmark/challenges/retrieval/r1_book_price/data.json",
+      "is_regression": true,
+      "category": [
+        "retrieval"
+      ],
+      "task": "Write the price of the book in this url 'http://books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "Specifies specific website to retrieve website from.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 60,
+        "cost": 0.13968200000000003,
+        "run_time": "60.01 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestBasicMemory": {
+      "data_path": "agbenchmark/challenges/memory/m1_id/data.json",
+      "is_regression": true,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "2314",
+      "description": "Tests ability for the agent to remember information between each action. An id is presented initially and the agent has to remember it after reading 4 other files",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 70,
+        "cost": 0.08623200000000002,
+        "run_time": "150.011 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestRememberMultipleIds": {
+      "data_path": "agbenchmark/challenges/memory/m2_multiple/data.json",
+      "is_regression": true,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "3145\n3791\n9317\n9471",
+      "description": "Tests ability for the agent to remember information between each action. Multiple ids are presented in different files and the last file instructs the agent to write these ids into another file.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": 0.062383999999999995,
+        "run_time": "120.009 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestFunctionCodeGeneration": {
+      "data_path": "agbenchmark/challenges/code/c3_writing_suite_2/d3_two_sum/data.json",
+      "is_regression": false,
+      "category": [
+        "code"
+      ],
+      "task": "Create a two_sum function in a file called sample_code.py. Given an array of integers, return indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice. Example: Given nums = [2, 7, 11, 15], target = 9, Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].",
+      "answer": "The two_sum function coded properly.",
+      "description": "Tests ability for the agent to create the two_sum function.",
+      "metrics": {
+        "difficulty": "advanced",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": 0.042411,
+        "run_time": "90.037 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestThreeSum": {
+      "data_path": "agbenchmark/challenges/code/c3_writing_suite_2/d3.1_three_sum/data.json",
+      "is_regression": false,
+      "category": [
+        "code",
+        "iterate"
+      ],
+      "task": "Create a three_sum function in a file called sample_code.py. Given an array of integers, return indices of the three numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice. Example: Given nums = [2, 7, 11, 15], target = 20, Because nums[0] + nums[1] + nums[2] = 2 + 7 + 11 = 20, return [0, 1, 2].",
+      "answer": "The three_sum function coded properly.",
+      "description": "Tests ability for the agent to create the three_sum function.",
+      "metrics": {
+        "difficulty": "advanced",
+        "success": true,
+        "attempted": true,
+        "success_%": 30,
+        "cost": 0.017884,
+        "run_time": "60.036 seconds"
+      },
+      "reached_cutoff": true
+    }
+  },
+  "config": {
+    "workspace": "workspace"
+  }
+}

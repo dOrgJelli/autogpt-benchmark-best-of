@@ -1,0 +1,93 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/aa28507c0a8ea03f509cd457c8bb184c090a3e3d",
+  "agent_git_commit_sha": "https://github.com/polywrap/PolyGPT/tree/d621adf5f54cc0f9a6d191139fb67ac3d1436d7b",
+  "completion_time": "2023-08-23T08:23:07+00:00",
+  "benchmark_start_time": "2023-08-23T08:13:26+00:00",
+  "metrics": {
+    "run_time": "579.9 seconds",
+    "highest_difficulty": "basic: 2"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the word 'Washington' to a .txt file",
+      "answer": "The word 'Washington', printed to a .txt file named anything",
+      "description": "Tests the agents ability to write to a file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.08529,
+        "run_time": "15.813 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/interface/search/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste all of the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.22743,
+        "run_time": "51.751 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/interface/read_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Read the file called file_to_read.txt and write its content to a file called output.txt",
+      "answer": "The content of output.txt should be 'Hello World!'",
+      "description": "Tests the ability for an agent to read a file.",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.13938,
+        "run_time": "32.863 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestPlanCreation": {
+      "data_path": "agbenchmark/challenges/content_gen/2_plan/data.json",
+      "is_regression": true,
+      "category": [
+        "content_gen"
+      ],
+      "task": "As an agent powered by a large language model, create a plan for yourself based on the task of booking a flight to Toronto. Output this plan into a .txt file.",
+      "answer": "1. Search for flights to Toronto.\n2. Select the cheapest flight.\n3. Book the flight.\n4. Pay for the flight.\n5. Confirm the flight.",
+      "description": "Tests ability to generate content based on the content of 2 files.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.14226,
+        "run_time": "33.447 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "workspace",
+    "entry_path": "agbenchmark.benchmarks"
+  }
+}

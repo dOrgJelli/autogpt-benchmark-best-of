@@ -1,0 +1,55 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/1b20e45ec138fd452a5d781fff18fde29ca8d939",
+  "agent_git_commit_sha": "https://github.com/merwanehamadi/developer/tree/a23d01369cea976e80b7889fdbf1096619471301",
+  "completion_time": "2023-08-10-08:16",
+  "benchmark_start_time": "2023-08-10-08:14",
+  "metrics": {
+    "run_time": "133.38 seconds",
+    "highest_difficulty": "basic: 2"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the word 'Washington' to a .txt file",
+      "answer": "The word 'Washington', printed to a .txt file named anything",
+      "description": "Tests the agents ability to write to a file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.0013125,
+        "run_time": "8.906 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestPlanCreation": {
+      "data_path": "agbenchmark/challenges/content_gen/2_plan/data.json",
+      "is_regression": true,
+      "category": [
+        "content_gen"
+      ],
+      "task": "As an agent powered by a large language model, create a plan for yourself to execute on based on the task of booking a flight to Toronto. Output this plan into a .txt file.",
+      "answer": "1. Search for flights to Toronto.\n2. Select the cheapest flight.\n3. Book the flight.\n4. Pay for the flight.\n5. Confirm the flight.",
+      "description": "Tests ability to generate content based on the content of 2 files.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 90,
+        "cost": 0.0024300000000000003,
+        "run_time": "28.281 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "generated",
+    "entry_path": "agbenchmark.benchmarks"
+  }
+}

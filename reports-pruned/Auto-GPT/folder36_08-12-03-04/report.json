@@ -1,0 +1,16 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/2428cf35961f47cda518cee7b43b888e6c4ba7f6",
+  "agent_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT/tree/3a2d08fb415071cc94dd6fcee24cfbdd1fb487dd",
+  "completion_time": "2023-08-12-03:05",
+  "benchmark_start_time": "2023-08-12-03:04",
+  "metrics": {
+    "run_time": "39.69 seconds",
+    "highest_difficulty": "No successful tests"
+  },
+  "tests": {},
+  "config": {
+    "workspace": "auto_gpt_workspace",
+    "entry_path": "agbenchmark.benchmarks"
+  }
+}

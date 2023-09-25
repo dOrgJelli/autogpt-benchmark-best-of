@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "prune-failed-tests": "npx ts-node ./scripts/prune-failed-tests.ts",
+    "extract-best-of": "npx ts-node ./scripts/extract-best-of.ts"
+  },
+  "devDependencies": {
+    "@types/node": "20.7.0",
+    "typescript": "5.2.2",
+    "ts-node": "10.9.1"
+  }
+}

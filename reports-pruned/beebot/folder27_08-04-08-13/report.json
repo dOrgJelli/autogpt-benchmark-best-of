@@ -1,0 +1,130 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/071c8a5f8e9b5ba865703c4d175f3c8c6300ce25",
+  "agent_git_commit_sha": "https://github.com/AutoPackAI/beebot/tree/7e3704f7cd58532b28fcb3d0ce1598d16448b028",
+  "completion_time": "2023-08-04-08:29",
+  "benchmark_start_time": "2023-08-04-08:13",
+  "metrics": {
+    "run_time": "970.06 seconds",
+    "highest_difficulty": "intermediate: 4"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Print the the capital of America to a .txt file",
+      "answer": "Washington",
+      "description": "Tests the writing to file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": 0.06415100000000001,
+        "run_time": "58.4 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/interface/search/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": 0.03509999999999999,
+        "run_time": "28.051 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/interface/read_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the string 'random string' before any existing text to the file called file_to_check.txt",
+      "answer": "random string Hello World!",
+      "description": "This reads the file quickly",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": 0.025238000000000003,
+        "run_time": "20.802 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestPlanCreation": {
+      "data_path": "agbenchmark/challenges/content_gen/2_plan/data.json",
+      "is_regression": true,
+      "category": [
+        "content_gen"
+      ],
+      "task": "As an agent powered by a large language model, create a plan for yourself to execute on based on the task of booking a flight to Toronto. Output this plan into a .txt file.",
+      "answer": "1. Search for flights to Toronto.\n2. Select the cheapest flight.\n3. Book the flight.\n4. Pay for the flight.\n5. Confirm the flight.",
+      "description": "Tests ability to generate content based on the content of 2 files.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 40,
+        "cost": 0.09781899999999999,
+        "run_time": "61.036 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestBasicRetrieval": {
+      "data_path": "agbenchmark/challenges/retrieval/r1_book_price/data.json",
+      "is_regression": true,
+      "category": [
+        "retrieval"
+      ],
+      "task": "Write the price of the book in this url 'http://books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "Specifies specific website to retrieve website from.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": 0.17904699999999998,
+        "run_time": "44.02 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestFunctionCodeGeneration": {
+      "data_path": "agbenchmark/challenges/code/c3_writing_suite_2/d3_two_sum/data.json",
+      "is_regression": true,
+      "category": [
+        "code"
+      ],
+      "task": "Create a two_sum function in a file called code.py. Given an array of integers, return indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice. Example: Given nums = [2, 7, 11, 15], target = 9, Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].",
+      "answer": "The two_sum function coded properly.",
+      "description": "Tests ability for the agent to create the two_sum function.",
+      "metrics": {
+        "difficulty": "advanced",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": 0.07032000000000001,
+        "run_time": "31.241 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "workspace"
+  }
+}

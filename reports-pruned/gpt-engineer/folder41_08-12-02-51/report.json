@@ -1,0 +1,55 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/58eb65290c8f238fec379153b1e811a29dd095e4",
+  "agent_git_commit_sha": "https://github.com/merwanehamadi/gpt-engineer/tree/9bb81041ace9f09e8ea0e34e29f2e46bb9d46a36",
+  "completion_time": "2023-08-12-02:58",
+  "benchmark_start_time": "2023-08-12-02:51",
+  "metrics": {
+    "run_time": "408.21 seconds",
+    "highest_difficulty": "interface: 1"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the word 'Washington' to a .txt file",
+      "answer": "The word 'Washington', printed to a .txt file named anything",
+      "description": "Tests the agents ability to write to a file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 70,
+        "cost": 0.08238,
+        "run_time": "60.015 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/interface/search/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste all of the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 30,
+        "cost": 0.10907999999999998,
+        "run_time": "60.066 seconds"
+      },
+      "reached_cutoff": true
+    }
+  },
+  "config": {
+    "workspace": "projects/my-new-project/workspace",
+    "entry_path": "agbenchmark.benchmarks"
+  }
+}

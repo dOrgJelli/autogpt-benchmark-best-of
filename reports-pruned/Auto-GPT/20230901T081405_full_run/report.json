@@ -1,0 +1,75 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/41909f0de7aa4221a3077e76f4ffc17303fbf371",
+  "agent_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT/tree/3a2d08fb415071cc94dd6fcee24cfbdd1fb487dd",
+  "completion_time": "2023-09-01T08:29:05+00:00",
+  "benchmark_start_time": "2023-09-01T08:14:05+00:00",
+  "metrics": {
+    "run_time": "900.34 seconds",
+    "highest_difficulty": "basic: 2",
+    "total_cost": 0.27794949999999996
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/abilities/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the word 'Washington' to a .txt file",
+      "answer": "The word 'Washington', printed to a .txt file named anything",
+      "description": "Tests the agents ability to write to a file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.06305999999999999,
+        "run_time": "58.305 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/verticals/scraping/basic/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste all of the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 80,
+        "cost": 0.0663,
+        "run_time": "262.633 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestPasswordGenerator_Easy": {
+      "data_path": "agbenchmark/challenges/verticals/code/1_password_generator/data.json",
+      "is_regression": false,
+      "category": [
+        "code"
+      ],
+      "task": "Create a random password generator. The password should have between 8 and 16 characters and should contain letters, numbers and symbols. The password should be printed to the console. The entry point will be a python file that can be run this way: python password_generator.py [--len x] where x is the length of the password. If no length is specified, the password should be 8 characters long. The password_generator can also be imported as a module and called as password = password_generator.generate_password(len=x). Any invalid input should raise a ValueError.",
+      "answer": "password_generator.py is created and satisfies the requirements.",
+      "description": "Tests ability for the agent to create a random password generator.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 10,
+        "cost": 0.04278,
+        "run_time": "333.869 seconds"
+      },
+      "reached_cutoff": true
+    }
+  },
+  "config": {
+    "workspace": "auto_gpt_workspace",
+    "entry_path": "agbenchmark.benchmarks"
+  }
+}

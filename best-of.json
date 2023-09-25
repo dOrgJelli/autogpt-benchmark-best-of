@@ -1,0 +1,1185 @@
+{
+  "TestWriteFile": {
+    "success_%": [
+      {
+        "report": "Auto-GPT/20230822T081337_full_run",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/20230823T081341_full_run",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/20230824T032421_full_run",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "smol-developer/20230817T081348_full_run",
+        "value": 0.00017
+      },
+      {
+        "report": "smol-developer/20230831T152508_full_run",
+        "value": 0.00017
+      },
+      {
+        "report": "smol-developer/20230901T081311_full_run",
+        "value": 0.00017
+      }
+    ],
+    "run_time": [
+      {
+        "report": "smol-developer/20230904T081400_full_run",
+        "value": "10.078 seconds"
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230831T145222_full_run",
+        "value": "10.224 seconds"
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230903T081239_full_run",
+        "value": "10.408 seconds"
+      }
+    ]
+  },
+  "TestSearch": {
+    "success_%": [
+      {
+        "report": "Auto-GPT/20230822T081337_full_run",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/20230823T081341_full_run",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/20230824T032421_full_run",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "gpt-engineer/folder50_08-14-08-13",
+        "value": 0.02139
+      },
+      {
+        "report": "beebot/folder36_08-10-08-14",
+        "value": 0.033523
+      },
+      {
+        "report": "beebot/folder34_08-08-08-13",
+        "value": 0.034856000000000005
+      }
+    ],
+    "run_time": [
+      {
+        "report": "Auto-GPT/20230828T081454_full_run",
+        "value": "102.779 seconds"
+      },
+      {
+        "report": "Auto-GPT/20230826T081228_full_run",
+        "value": "109.216 seconds"
+      },
+      {
+        "report": "PolyGPT/folder15_08-14-08-37",
+        "value": "111.535 seconds"
+      }
+    ]
+  },
+  "TestReadFile": {
+    "success_%": [
+      {
+        "report": "Auto-GPT/20230822T081337_full_run",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/20230823T081341_full_run",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/folder10_08-01-02-43",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "beebot/20230824T081331_full_run",
+        "value": 0.001784
+      },
+      {
+        "report": "PolyGPT/folder15_08-14-08-13",
+        "value": 0.009515000000000001
+      },
+      {
+        "report": "PolyGPT/folder15_08-14-08-37",
+        "value": 0.009515000000000001
+      }
+    ],
+    "run_time": [
+      {
+        "report": "mini-agi/20230910T080446_full_run",
+        "value": "11.623 seconds"
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230901T170512_full_run",
+        "value": "11.779 seconds"
+      },
+      {
+        "report": "mini-agi/folder42_08-12-17-24",
+        "value": "12.469 seconds"
+      }
+    ]
+  },
+  "TestPlanCreation": {
+    "success_%": [
+      {
+        "report": "Auto-GPT/20230822T081337_full_run",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/20230823T081341_full_run",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/20230824T032421_full_run",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "smol-developer/20230823T081258_full_run",
+        "value": 0.000657
+      },
+      {
+        "report": "smol-developer/20230827T081202_full_run",
+        "value": 0.000657
+      },
+      {
+        "report": "smol-developer/folder38_08-08-22-23",
+        "value": 0.000662
+      }
+    ],
+    "run_time": [
+      {
+        "report": "gpt-engineer/folder50_08-14-08-13",
+        "value": "1.989 seconds"
+      },
+      {
+        "report": "smol-developer/20230824T081338_full_run",
+        "value": "111.157 seconds"
+      },
+      {
+        "report": "Auto-GPT/20230825T081408_full_run",
+        "value": "114.576 seconds"
+      }
+    ]
+  },
+  "TestBasicRetrieval": {
+    "success_%": [
+      {
+        "report": "Auto-GPT/folder31_08-09-08-15",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/folder32_08-10-08-14",
+        "value": 100
+      },
+      {
+        "report": "gpt-engineer/folder2_07-31-02-07",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "beebot/folder34_08-08-08-13",
+        "value": 0.038814999999999995
+      },
+      {
+        "report": "beebot/folder48_08-13-08-12",
+        "value": 0.055581
+      },
+      {
+        "report": "beebot/20230824T081331_full_run",
+        "value": 0.055604
+      }
+    ],
+    "run_time": [
+      {
+        "report": "mini-agi/20230908T001050_full_run",
+        "value": "15.284 seconds"
+      },
+      {
+        "report": "mini-agi/folder33_08-06-08-12",
+        "value": "16.887 seconds"
+      },
+      {
+        "report": "mini-agi/folder44_08-13-01-52",
+        "value": "18.008 seconds"
+      }
+    ]
+  },
+  "TestDebugSimpleTypoWithGuidance": {
+    "success_%": [
+      {
+        "report": "Auto-GPT/folder10_08-01-02-43",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/folder10_08-01-12-47",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/folder11_08-01-03-21",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "PolyGPT/folder15_08-14-08-13",
+        "value": 0.007843
+      },
+      {
+        "report": "PolyGPT/folder15_08-14-08-37",
+        "value": 0.007843
+      },
+      {
+        "report": "beebot/folder49_08-14-08-13",
+        "value": 0.012882
+      }
+    ],
+    "run_time": [
+      {
+        "report": "beebot/folder8_07-31-19-38",
+        "value": "26.451 seconds"
+      },
+      {
+        "report": "mini-agi/folder44_08-13-01-52",
+        "value": "29.442 seconds"
+      },
+      {
+        "report": "mini-agi/folder45_08-13-02-16",
+        "value": "31.237 seconds"
+      }
+    ]
+  },
+  "TestFunctionCodeGeneration": {
+    "success_%": [
+      {
+        "report": "Auto-GPT/folder4_07-31-13-05",
+        "value": 100
+      },
+      {
+        "report": "beebot/folder2_07-31-02-07",
+        "value": 100
+      },
+      {
+        "report": "beebot/folder3_07-31-03-06",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "PolyGPT/folder15_08-14-08-13",
+        "value": 0.020831
+      },
+      {
+        "report": "beebot/folder48_08-13-08-12",
+        "value": 0.021909999999999995
+      },
+      {
+        "report": "beebot/20230824T032431_full_run",
+        "value": 0.025368
+      }
+    ],
+    "run_time": [
+      {
+        "report": "Auto-GPT-Turbo/20230903T081239_full_run",
+        "value": "12.751 seconds"
+      },
+      {
+        "report": "PolyGPT/folder17_08-14-09-48",
+        "value": "20.277 seconds"
+      },
+      {
+        "report": "Auto-GPT/folder41_08-13-01-53",
+        "value": "24.354 seconds"
+      }
+    ]
+  },
+  "TestAdaptTeslaRevenue": {
+    "success_%": [
+      {
+        "report": "mini-agi/20230829T081410_full_run",
+        "value": 50
+      },
+      {
+        "report": "Auto-GPT/folder43_08-13-08-13",
+        "value": 40
+      },
+      {
+        "report": "mini-agi/20230828T081410_full_run",
+        "value": 40
+      }
+    ],
+    "cost": [
+      {
+        "report": "beebot/folder49_08-14-08-13",
+        "value": 0.018954000000000002
+      },
+      {
+        "report": "mini-agi/20230824T032434_full_run",
+        "value": 0.026670399999999993
+      },
+      {
+        "report": "mini-agi/folder48_08-14-08-13",
+        "value": 0.027089999999999996
+      }
+    ],
+    "run_time": [
+      {
+        "report": "mini-agi/folder48_08-14-08-13",
+        "value": "11.299 seconds"
+      },
+      {
+        "report": "Auto-GPT/folder39_08-12-17-24",
+        "value": "35.504 seconds"
+      },
+      {
+        "report": "Auto-GPT/folder40_08-13-01-10",
+        "value": "36.058 seconds"
+      }
+    ]
+  },
+  "TestThreeSum": {
+    "success_%": [
+      {
+        "report": "Auto-GPT/folder4_07-31-13-05",
+        "value": 100
+      },
+      {
+        "report": "beebot/folder2_07-31-02-07",
+        "value": 100
+      },
+      {
+        "report": "beebot/folder3_07-31-03-06",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "PolyGPT/folder15_08-14-08-13",
+        "value": 0.0041530000000000004
+      },
+      {
+        "report": "beebot/folder49_08-14-08-13",
+        "value": 0.017070000000000002
+      },
+      {
+        "report": "beebot/20230824T032431_full_run",
+        "value": 0.017084
+      }
+    ],
+    "run_time": [
+      {
+        "report": "Auto-GPT-Turbo/20230831T081441_full_run",
+        "value": "102.073 seconds"
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230902T081222_full_run",
+        "value": "18.976 seconds"
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230901T170512_full_run",
+        "value": "20.854 seconds"
+      }
+    ]
+  },
+  "TestDebugSimpleTypoWithoutGuidance": {
+    "success_%": [
+      {
+        "report": "Auto-GPT/folder2_07-31-03-06",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/folder5_07-31-16-10",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT/folder7_07-31-19-39",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "PolyGPT/folder15_08-14-08-13",
+        "value": 0.003823
+      },
+      {
+        "report": "PolyGPT/folder15_08-14-08-37",
+        "value": 0.003823
+      },
+      {
+        "report": "beebot/folder50_08-14-21-37",
+        "value": 0.017592
+      }
+    ],
+    "run_time": [
+      {
+        "report": "PolyGPT/20230817T081344_full_run",
+        "value": "185.39 seconds"
+      },
+      {
+        "report": "mini-agi/folder24_08-02-17-20",
+        "value": "24.713 seconds"
+      },
+      {
+        "report": "mini-agi/folder47_08-13-08-11",
+        "value": "27.96 seconds"
+      }
+    ]
+  },
+  "TestWrite5FilesWithArray": {
+    "success_%": [
+      {
+        "report": "PolyGPT/20230905T081409_full_run",
+        "value": 90
+      },
+      {
+        "report": "mini-agi/20230905T081354_full_run",
+        "value": 90
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230904T081450_full_run",
+        "value": 80
+      }
+    ],
+    "cost": [
+      {
+        "report": "PolyGPT/folder15_08-14-08-13",
+        "value": 0.014586
+      },
+      {
+        "report": "PolyGPT/folder15_08-14-08-37",
+        "value": 0.014586
+      },
+      {
+        "report": "beebot/folder49_08-14-08-13",
+        "value": 0.015643
+      }
+    ],
+    "run_time": [
+      {
+        "report": "Auto-GPT-Turbo/20230904T081450_full_run",
+        "value": "12.759 seconds"
+      },
+      {
+        "report": "mini-agi/20230903T081306_full_run",
+        "value": "13.183 seconds"
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230903T081239_full_run",
+        "value": "13.965 seconds"
+      }
+    ]
+  },
+  "TestBasicMemory": {
+    "success_%": [
+      {
+        "report": "Auto-GPT-Turbo/20230824T032419_full_run",
+        "value": 100
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230824T081333_full_run",
+        "value": 100
+      },
+      {
+        "report": "PolyGPT/20230821T081430_full_run",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "beebot/20230824T081331_full_run",
+        "value": 0.024984000000000003
+      },
+      {
+        "report": "beebot/20230824T032431_full_run",
+        "value": 0.067429
+      },
+      {
+        "report": "beebot/folder49_08-14-08-13",
+        "value": 0.06880800000000001
+      }
+    ],
+    "run_time": [
+      {
+        "report": "Auto-GPT/folder42_08-13-02-38",
+        "value": "107.952 seconds"
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230826T081326_full_run",
+        "value": "112.28 seconds"
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230824T032419_full_run",
+        "value": "112.609 seconds"
+      }
+    ]
+  },
+  "TestAdaptLink": {
+    "success_%": [
+      {
+        "report": "mini-agi/folder1_07-29-23-35",
+        "value": 100
+      },
+      {
+        "report": "mini-agi/folder2_07-30-22-54",
+        "value": 100
+      },
+      {
+        "report": "mini-agi/folder3_07-31-02-40",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "beebot/folder49_08-14-08-13",
+        "value": 0.023955
+      },
+      {
+        "report": "mini-agi/folder48_08-14-08-13",
+        "value": 0.056103499999999994
+      },
+      {
+        "report": "mini-agi/folder26_08-02-22-57",
+        "value": 0.0594475
+      }
+    ],
+    "run_time": [
+      {
+        "report": "Auto-GPT-Turbo/20230827T081254_full_run",
+        "value": "107.186 seconds"
+      },
+      {
+        "report": "mini-agi/20230819T081219_full_run",
+        "value": "21.649 seconds"
+      },
+      {
+        "report": "mini-agi/folder2_07-30-22-54",
+        "value": "23.623 seconds"
+      }
+    ]
+  },
+  "TestPasswordGenerator_Easy": {
+    "success_%": [
+      {
+        "report": "Auto-GPT/20230901T081405_full_run",
+        "value": 10
+      },
+      {
+        "report": "PolyGPT/20230901T081331_full_run",
+        "value": 10
+      },
+      {
+        "report": "beebot/20230901T081447_full_run",
+        "value": 10
+      }
+    ],
+    "cost": [
+      {
+        "report": "Auto-GPT/20230901T081405_full_run",
+        "value": 0.04278
+      },
+      {
+        "report": "beebot/20230901T081447_full_run",
+        "value": 0.043497
+      },
+      {
+        "report": "PolyGPT/20230901T081331_full_run",
+        "value": 0.11679
+      }
+    ],
+    "run_time": [
+      {
+        "report": "Auto-GPT/20230901T081405_full_run",
+        "value": "333.869 seconds"
+      },
+      {
+        "report": "PolyGPT/20230901T081331_full_run",
+        "value": "57.605 seconds"
+      },
+      {
+        "report": "beebot/20230901T081447_full_run",
+        "value": "90.094 seconds"
+      }
+    ]
+  },
+  "TestRememberGoal_Simple": {
+    "success_%": [
+      {
+        "report": "PolyGPT/20230905T081409_full_run",
+        "value": 100
+      },
+      {
+        "report": "PolyGPT/20230904T081401_full_run",
+        "value": 90
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230905T081456_full_run",
+        "value": 80
+      }
+    ],
+    "cost": [],
+    "run_time": [
+      {
+        "report": "PolyGPT/20230903T081236_full_run",
+        "value": "16.771 seconds"
+      },
+      {
+        "report": "PolyGPT/20230905T081409_full_run",
+        "value": "33.517 seconds"
+      },
+      {
+        "report": "mini-agi/20230903T081306_full_run",
+        "value": "35.232 seconds"
+      }
+    ]
+  },
+  "TestRememberGoal_Medium": {
+    "success_%": [
+      {
+        "report": "PolyGPT/20230905T081409_full_run",
+        "value": 70
+      },
+      {
+        "report": "PolyGPT/20230904T081401_full_run",
+        "value": 60
+      },
+      {
+        "report": "mini-agi/20230905T081354_full_run",
+        "value": 60
+      }
+    ],
+    "cost": [],
+    "run_time": [
+      {
+        "report": "PolyGPT/20230903T081236_full_run",
+        "value": "27.854 seconds"
+      },
+      {
+        "report": "mini-agi/20230903T081306_full_run",
+        "value": "43.447 seconds"
+      },
+      {
+        "report": "PolyGPT/20230905T081409_full_run",
+        "value": "48.566 seconds"
+      }
+    ]
+  },
+  "TestRememberGoal_Advanced": {
+    "success_%": [
+      {
+        "report": "PolyGPT/20230905T081409_full_run",
+        "value": 70
+      },
+      {
+        "report": "PolyGPT/20230904T081401_full_run",
+        "value": 60
+      },
+      {
+        "report": "mini-agi/20230905T081354_full_run",
+        "value": 60
+      }
+    ],
+    "cost": [],
+    "run_time": [
+      {
+        "report": "PolyGPT/20230903T081236_full_run",
+        "value": "32.628 seconds"
+      },
+      {
+        "report": "mini-agi/20230903T081306_full_run",
+        "value": "38.036 seconds"
+      },
+      {
+        "report": "mini-agi/20230905T081354_full_run",
+        "value": "43.478 seconds"
+      }
+    ]
+  },
+  "TestRememberGoal_Hard": {
+    "success_%": [
+      {
+        "report": "PolyGPT/20230905T081409_full_run",
+        "value": 100
+      },
+      {
+        "report": "PolyGPT/20230904T081401_full_run",
+        "value": 90
+      },
+      {
+        "report": "PolyGPT/20230903T081236_full_run",
+        "value": 80
+      }
+    ],
+    "cost": [],
+    "run_time": [
+      {
+        "report": "mini-agi/20230903T081306_full_run",
+        "value": "38.548 seconds"
+      },
+      {
+        "report": "mini-agi/20230905T081354_full_run",
+        "value": "39.259 seconds"
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230905T081456_full_run",
+        "value": "46.093 seconds"
+      }
+    ]
+  },
+  "TestDebugMultipleTypo": {
+    "success_%": [
+      {
+        "report": "Auto-GPT/folder2_07-31-03-06",
+        "value": 100
+      },
+      {
+        "report": "beebot/folder2_07-31-02-07",
+        "value": 100
+      },
+      {
+        "report": "beebot/folder8_07-31-19-38",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "PolyGPT/folder15_08-14-08-13",
+        "value": 0.003823
+      },
+      {
+        "report": "PolyGPT/folder15_08-14-08-37",
+        "value": 0.009979000000000002
+      },
+      {
+        "report": "mini-agi/folder49_08-14-17-10",
+        "value": 0.051402899999999994
+      }
+    ],
+    "run_time": [
+      {
+        "report": "mini-agi/folder26_08-02-22-57",
+        "value": "104.388 seconds"
+      },
+      {
+        "report": "mini-agi/20230821T081348_full_run",
+        "value": "108.66 seconds"
+      },
+      {
+        "report": "PolyGPT/folder15_08-14-08-13",
+        "value": "26.608 seconds"
+      }
+    ]
+  },
+  "TestBasicContentGen": {
+    "success_%": [
+      {
+        "report": "mini-agi/folder13_08-01-03-21",
+        "value": 100
+      },
+      {
+        "report": "mini-agi/folder1_07-29-23-35",
+        "value": 100
+      },
+      {
+        "report": "mini-agi/folder2_07-30-22-54",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "mini-agi/folder39_08-02-02-36",
+        "value": 0.055847
+      },
+      {
+        "report": "mini-agi/folder25_08-02-17-38",
+        "value": 0.057900999999999994
+      },
+      {
+        "report": "mini-agi/folder30_08-04-08-13",
+        "value": 0.0995175
+      }
+    ],
+    "run_time": [
+      {
+        "report": "mini-agi/folder9_07-31-19-38",
+        "value": "115.124 seconds"
+      },
+      {
+        "report": "mini-agi/folder41_08-12-08-12",
+        "value": "44.09 seconds"
+      },
+      {
+        "report": "mini-agi/folder33_08-06-08-12",
+        "value": "45.594 seconds"
+      }
+    ]
+  },
+  "TestRememberMultipleIds": {
+    "success_%": [
+      {
+        "report": "PolyGPT/20230821T081430_full_run",
+        "value": 100
+      },
+      {
+        "report": "PolyGPT/20230822T081318_full_run",
+        "value": 100
+      },
+      {
+        "report": "PolyGPT/20230904T081401_full_run",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "mini-agi/folder49_08-14-17-10",
+        "value": 0.0520849
+      },
+      {
+        "report": "beebot/folder50_08-14-21-37",
+        "value": 0.059128
+      },
+      {
+        "report": "beebot/20230829T081405_full_run",
+        "value": 0.062383999999999995
+      }
+    ],
+    "run_time": [
+      {
+        "report": "Auto-GPT-Turbo/20230826T081326_full_run",
+        "value": "111.937 seconds"
+      },
+      {
+        "report": "mini-agi/folder48_08-14-08-13",
+        "value": "116.725 seconds"
+      },
+      {
+        "report": "beebot/20230822T081327_full_run",
+        "value": "120.008 seconds"
+      }
+    ]
+  },
+  "TestRememberMultipleIdsWithNoise": {
+    "success_%": [
+      {
+        "report": "PolyGPT/20230821T081430_full_run",
+        "value": 100
+      },
+      {
+        "report": "PolyGPT/20230822T081318_full_run",
+        "value": 100
+      },
+      {
+        "report": "PolyGPT/20230904T081401_full_run",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "beebot/20230824T032431_full_run",
+        "value": 0.10837300000000001
+      },
+      {
+        "report": "mini-agi/folder49_08-14-17-10",
+        "value": 0.11109689999999998
+      },
+      {
+        "report": "beebot/folder46_08-13-01-10",
+        "value": 0.118309
+      }
+    ],
+    "run_time": [
+      {
+        "report": "Auto-GPT/folder40_08-13-01-10",
+        "value": "113.502 seconds"
+      },
+      {
+        "report": "beebot/20230819T081151_full_run",
+        "value": "120.008 seconds"
+      },
+      {
+        "report": "beebot/20230830T081410_full_run",
+        "value": "120.008 seconds"
+      }
+    ]
+  },
+  "TestRememberMultiplePhrasesWithNoise": {
+    "success_%": [
+      {
+        "report": "PolyGPT/20230904T081401_full_run",
+        "value": 100
+      },
+      {
+        "report": "beebot/folder1_07-30-22-53",
+        "value": 100
+      },
+      {
+        "report": "beebot/folder8_07-31-19-38",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "PolyGPT/20230824T081402_full_run",
+        "value": 0.03867
+      },
+      {
+        "report": "beebot/folder49_08-14-08-13",
+        "value": 0.153044
+      },
+      {
+        "report": "beebot/folder46_08-13-01-10",
+        "value": 0.216699
+      }
+    ],
+    "run_time": [
+      {
+        "report": "mini-agi/folder49_08-14-17-10",
+        "value": "101.585 seconds"
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230824T081333_full_run",
+        "value": "109.886 seconds"
+      },
+      {
+        "report": "beebot/20230819T081151_full_run",
+        "value": "120.008 seconds"
+      }
+    ]
+  },
+  "TestWrite6Files": {
+    "success_%": [
+      {
+        "report": "PolyGPT/20230905T081409_full_run",
+        "value": 90
+      },
+      {
+        "report": "mini-agi/20230905T081354_full_run",
+        "value": 90
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230904T081450_full_run",
+        "value": 80
+      }
+    ],
+    "cost": [
+      {
+        "report": "mini-agi/20230828T081410_full_run",
+        "value": 0.0289373
+      },
+      {
+        "report": "beebot/folder49_08-14-08-13",
+        "value": 0.029979
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230830T130202_full_run",
+        "value": 0.04215
+      }
+    ],
+    "run_time": [
+      {
+        "report": "Auto-GPT-Turbo/20230903T081239_full_run",
+        "value": "18.764 seconds"
+      },
+      {
+        "report": "Auto-GPT-Turbo/20230904T081450_full_run",
+        "value": "19.784 seconds"
+      },
+      {
+        "report": "mini-agi/20230828T081410_full_run",
+        "value": "20.312 seconds"
+      }
+    ]
+  },
+  "TestAdaptSimpleTypoWithGuidance": {
+    "success_%": [
+      {
+        "report": "beebot/folder2_07-31-02-07",
+        "value": 100
+      },
+      {
+        "report": "beebot/folder3_07-31-03-06",
+        "value": 100
+      },
+      {
+        "report": "beebot/folder8_07-31-19-38",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "beebot/folder47_08-13-02-38",
+        "value": 0.027929000000000002
+      },
+      {
+        "report": "beebot/20230817T000111_full_run",
+        "value": 0.028902
+      },
+      {
+        "report": "beebot/folder49_08-14-08-13",
+        "value": 0.037403000000000006
+      }
+    ],
+    "run_time": [
+      {
+        "report": "PolyGPT/20230829T081440_full_run",
+        "value": "104.072 seconds"
+      },
+      {
+        "report": "PolyGPT/20230904T081401_full_run",
+        "value": "104.546 seconds"
+      },
+      {
+        "report": "PolyGPT/20230822T081318_full_run",
+        "value": "109.655 seconds"
+      }
+    ]
+  },
+  "TestRetrieval3": {
+    "success_%": [
+      {
+        "report": "PolyGPT/folder17_08-14-09-48",
+        "value": 20
+      },
+      {
+        "report": "mini-agi/folder49_08-14-17-10",
+        "value": 20
+      },
+      {
+        "report": "PolyGPT/folder15_08-14-08-13",
+        "value": 10
+      }
+    ],
+    "cost": [
+      {
+        "report": "beebot/folder49_08-14-08-13",
+        "value": 0.023965999999999998
+      },
+      {
+        "report": "PolyGPT/folder17_08-14-09-48",
+        "value": 0.09612
+      },
+      {
+        "report": "mini-agi/folder49_08-14-17-10",
+        "value": 0.1674284
+      }
+    ],
+    "run_time": [
+      {
+        "report": "PolyGPT/folder17_08-14-09-48",
+        "value": "44.436 seconds"
+      },
+      {
+        "report": "beebot/folder49_08-14-08-13",
+        "value": "60.037 seconds"
+      },
+      {
+        "report": "PolyGPT/folder15_08-14-08-13",
+        "value": "61.918 seconds"
+      }
+    ]
+  },
+  "TestWritingCLI_FileOrganizer": {
+    "success_%": [
+      {
+        "report": "beebot/20230901T081447_full_run",
+        "value": 10
+      }
+    ],
+    "cost": [
+      {
+        "report": "beebot/20230901T081447_full_run",
+        "value": 0.06863000000000001
+      }
+    ],
+    "run_time": [
+      {
+        "report": "beebot/20230901T081447_full_run",
+        "value": "90.141 seconds"
+      }
+    ]
+  },
+  "TestRememberMultipleWithNoise": {
+    "success_%": [
+      {
+        "report": "beebot/folder1_07-30-22-53",
+        "value": 100
+      },
+      {
+        "report": "beebot/folder3_07-31-03-06",
+        "value": 100
+      },
+      {
+        "report": "beebot/folder8_07-31-19-38",
+        "value": 100
+      }
+    ],
+    "cost": [
+      {
+        "report": "beebot/folder26_08-04-03-24",
+        "value": 0.685236
+      },
+      {
+        "report": "beebot/folder24_08-03-08-13",
+        "value": 1.2567739999999998
+      }
+    ],
+    "run_time": [
+      {
+        "report": "beebot/folder1_07-30-22-53",
+        "value": "16.731 seconds"
+      },
+      {
+        "report": "beebot/folder24_08-03-08-13",
+        "value": "75.004 seconds"
+      },
+      {
+        "report": "beebot/folder26_08-04-03-24",
+        "value": "75.004 seconds"
+      }
+    ]
+  },
+  "TestCreateSimpleWebServer": {
+    "success_%": [
+      {
+        "report": "beebot/folder2_07-31-02-07",
+        "value": 100
+      },
+      {
+        "report": "mini-agi/folder1_07-29-23-35",
+        "value": 100
+      },
+      {
+        "report": "mini-agi/folder2_07-30-22-54",
+        "value": 100
+      }
+    ],
+    "cost": [],
+    "run_time": [
+      {
+        "report": "mini-agi/folder2_07-30-22-54",
+        "value": "27.533 seconds"
+      },
+      {
+        "report": "mini-agi/folder1_07-29-23-35",
+        "value": "32.91 seconds"
+      },
+      {
+        "report": "beebot/folder2_07-31-02-07",
+        "value": "65.758 seconds"
+      }
+    ]
+  }
+}

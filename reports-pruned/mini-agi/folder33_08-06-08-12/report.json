@@ -1,0 +1,130 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/6330f464140308b5228603d882f49d5563269743",
+  "agent_git_commit_sha": "https://github.com/SilenNaihin/mini-agi/tree/2fc70aa0032eec986dfb1020854a1b3b8aaf6780",
+  "completion_time": "2023-08-06-08:21",
+  "benchmark_start_time": "2023-08-06-08:12",
+  "metrics": {
+    "run_time": "528.71 seconds",
+    "highest_difficulty": "basic: 2"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Print the the capital of America to a .txt file",
+      "answer": "Washington",
+      "description": "Tests the writing to file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.026031,
+        "run_time": "21.16 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/interface/search/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.052948999999999996,
+        "run_time": "16.701 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/interface/read_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the string 'random string' before any existing text to the file called file_to_check.txt",
+      "answer": "random string Hello World!",
+      "description": "This reads the file quickly",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.0282055,
+        "run_time": "12.586 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicRetrieval": {
+      "data_path": "agbenchmark/challenges/retrieval/r1_book_price/data.json",
+      "is_regression": true,
+      "category": [
+        "retrieval"
+      ],
+      "task": "Write the price of the book in this url 'http://books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "Specifies specific website to retrieve website from.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 90,
+        "cost": 0.13178999999999996,
+        "run_time": "16.887 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicContentGen": {
+      "data_path": "agbenchmark/challenges/content_gen/1_summary/data.json",
+      "is_regression": false,
+      "category": [
+        "content_gen"
+      ],
+      "task": "Create a brief report or summary highlighting how one or more companies from companies.txt are addressing or capitalizing on challenges or trends from challenges.txt. Write a file called output.txt.",
+      "answer": "A report highlighting elements from the 2 files.",
+      "description": "Tests ability to generate content based on the content of 2 files.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": 0.35659949999999996,
+        "run_time": "45.594 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestAdaptTeslaRevenue": {
+      "data_path": "agbenchmark/challenges/adapatability/a2_tesla_revenue/data.json",
+      "is_regression": false,
+      "category": [
+        "adaptability"
+      ],
+      "task": "I'm a financial planner, please help me write tesla's r in 2022 into a .txt file.",
+      "answer": "It was $81.462 billion in 2022.",
+      "description": "Given context adapt to the missing of the word revenue",
+      "metrics": {
+        "difficulty": "intermediate",
+        "success": true,
+        "attempted": true,
+        "success_%": 10,
+        "cost": 0.1246425,
+        "run_time": "42.543 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "${os.path.join(Path.home(), 'miniagi')}"
+  }
+}

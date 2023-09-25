@@ -1,0 +1,93 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": null,
+  "agent_git_commit_sha": "https://github.com/SilenNaihin/mini-agi/tree/2fc70aa0032eec986dfb1020854a1b3b8aaf6780",
+  "completion_time": "2023-09-08T00:20:02+00:00",
+  "benchmark_start_time": "2023-09-08T00:10:50+00:00",
+  "metrics": {
+    "run_time": "551.8 seconds",
+    "highest_difficulty": "intermediate: 4",
+    "total_cost": 0
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/abilities/write_file/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the word 'Washington' to a .txt file",
+      "answer": "The word 'Washington', printed to a .txt file named anything",
+      "description": "Tests the agents ability to write to a file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 87.5,
+        "cost": null,
+        "run_time": "13.526 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/abilities/read_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Read the file called file_to_read.txt and write its content to a file called output.txt",
+      "answer": "The content of output.txt should be 'Hello World!'",
+      "description": "Tests the ability for an agent to read a file.",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": null,
+        "run_time": "13.745 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/verticals/scraping/basic/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste all of the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": null,
+        "run_time": "19.546 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicRetrieval": {
+      "data_path": "agbenchmark/challenges/verticals/scraping/r1_book_price/data.json",
+      "is_regression": true,
+      "category": [
+        "retrieval"
+      ],
+      "task": "Write the price of the book in this url 'http://books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "Specifies specific website to retrieve website from.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": null,
+        "run_time": "15.284 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "${os.path.join(Path.home(), 'miniagi')}"
+  }
+}

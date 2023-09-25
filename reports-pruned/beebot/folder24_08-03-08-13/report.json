@@ -1,0 +1,207 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/3433b10734ae4883211661da790b248ca0463447",
+  "agent_git_commit_sha": "https://github.com/AutoPackAI/beebot/tree/7e3704f7cd58532b28fcb3d0ce1598d16448b028",
+  "completion_time": "2023-08-03-08:37",
+  "benchmark_start_time": "2023-08-03-08:13",
+  "metrics": {
+    "run_time": "1470.16 seconds",
+    "highest_difficulty": "intermediate: 4"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Print the the capital of America to a .txt file",
+      "answer": "Washington",
+      "description": "Tests the writing to file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 30,
+        "cost": 0.07241800000000001,
+        "run_time": "60.004 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/interface/search/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 30,
+        "cost": 0.056823000000000005,
+        "run_time": "22.486 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/interface/read_file/data.json",
+      "is_regression": false,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the string 'random string' before any existing text to the file called file_to_check.txt",
+      "answer": "random string Hello World!",
+      "description": "This reads the file quickly",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 30,
+        "cost": 0.054299000000000014,
+        "run_time": "29.514 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestPlanCreation": {
+      "data_path": "agbenchmark/challenges/content_gen/2_plan/data.json",
+      "is_regression": false,
+      "category": [
+        "content_gen"
+      ],
+      "task": "As an agent powered by a large language model, create a plan for yourself to execute on based on the task of booking a flight to Toronto. Output this plan into a .txt file.",
+      "answer": "1. Search for flights to Toronto.\n2. Select the cheapest flight.\n3. Book the flight.\n4. Pay for the flight.\n5. Confirm the flight.",
+      "description": "Tests ability to generate content based on the content of 2 files.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 10,
+        "cost": 0.183527,
+        "run_time": "61.033 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestBasicRetrieval": {
+      "data_path": "agbenchmark/challenges/retrieval/r1_book_price/data.json",
+      "is_regression": false,
+      "category": [
+        "retrieval"
+      ],
+      "task": "Write the price of the book in this url 'http://books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "Specifies specific website to retrieve website from.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 20,
+        "cost": 0.184883,
+        "run_time": "48.372 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicMemory": {
+      "data_path": "agbenchmark/challenges/memory/m1_id/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "2314",
+      "description": "Tests ability for the agent to remember information between each action. An id is presented initially and the agent has to remember it after reading 4 other files",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 30,
+        "cost": 0.18588600000000002,
+        "run_time": "60.005 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestRememberMultipleIds": {
+      "data_path": "agbenchmark/challenges/memory/m2_multiple/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "3145\n3791\n9317\n9471",
+      "description": "Tests ability for the agent to remember information between each action. Multiple ids are presented in different files and the last file instructs the agent to write these ids into another file.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "attempted": true,
+        "success_%": 30,
+        "cost": 0.452622,
+        "run_time": "60.007 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestRememberMultipleWithNoise": {
+      "data_path": "agbenchmark/challenges/memory/m3_noise/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "3145\n3791\n9317\n9471",
+      "description": "Tests ability for the agent to remember information between each action. Multiple ids are presented in different files and the last file instructs the agent to write these ids into another file. Some noise is also added to the files to test the agent's ability to filter out noise.",
+      "metrics": {
+        "difficulty": "intermediate",
+        "success": true,
+        "attempted": true,
+        "success_%": 10,
+        "cost": 1.2567739999999998,
+        "run_time": "75.004 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestFunctionCodeGeneration": {
+      "data_path": "agbenchmark/challenges/code/c3_writing_suite_2/d3_two_sum/data.json",
+      "is_regression": false,
+      "category": [
+        "code"
+      ],
+      "task": "Create a two_sum function in a file called code.py. Given an array of integers, return indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice. Example: Given nums = [2, 7, 11, 15], target = 9, Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].",
+      "answer": "The two_sum function coded properly.",
+      "description": "Tests ability for the agent to create the two_sum function.",
+      "metrics": {
+        "difficulty": "advanced",
+        "success": true,
+        "attempted": true,
+        "success_%": 30,
+        "cost": 0.450356,
+        "run_time": "90.038 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestThreeSum": {
+      "data_path": "agbenchmark/challenges/code/c3_writing_suite_2/d3.1_three_sum/data.json",
+      "is_regression": false,
+      "category": [
+        "code",
+        "iterate"
+      ],
+      "task": "Create a three_sum function in a file called code.py. Given an array of integers, return indices of the three numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice. Example: Given nums = [2, 7, 11, 15], target = 20, Because nums[0] + nums[1] + nums[2] = 2 + 7 + 11 = 20, return [0, 1, 2].",
+      "answer": "The three_sum function coded properly.",
+      "description": "Tests ability for the agent to create the three_sum function.",
+      "metrics": {
+        "difficulty": "advanced",
+        "success": true,
+        "attempted": true,
+        "success_%": 30,
+        "cost": 0.083491,
+        "run_time": "56.337 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "workspace"
+  }
+}

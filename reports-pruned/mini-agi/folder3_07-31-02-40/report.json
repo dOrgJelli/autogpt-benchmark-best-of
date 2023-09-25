@@ -1,0 +1,150 @@
+{
+  "command": "agbenchmark start",
+  "completion_time": "2023-07-31-02:52",
+  "benchmark_start_time": "2023-07-31-02:40",
+  "metrics": {
+    "run_time": "727.37 seconds",
+    "highest_difficulty": "novice: 3"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Print the the capital of America to a .txt file",
+      "answer": "Washington",
+      "description": "Tests the writing to file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "success_%": 100,
+        "run_time": "14.406 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/interface/search/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "success_%": 100,
+        "run_time": "21.655 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/interface/read_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the string 'random string' before any existing text to the file called file_to_check.txt",
+      "answer": "random string Hello World!",
+      "description": "This reads the file quickly",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "success_%": 100,
+        "run_time": "15.511 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicRetrieval": {
+      "data_path": "agbenchmark/challenges/retrieval/r1_book_price/data.json",
+      "is_regression": true,
+      "category": [
+        "retrieval"
+      ],
+      "task": "Write the price of the book in this url 'http://books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "Specifies specific website to retrieve website from.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "success_%": 100,
+        "run_time": "20.023 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicContentGen": {
+      "data_path": "agbenchmark/challenges/content_gen/1_summary/data.json",
+      "is_regression": false,
+      "category": [
+        "content_gen"
+      ],
+      "task": "Create a brief report or summary highlighting how one or more companies from companies.txt are addressing or capitalizing on challenges or trends from challenges.txt. Write a file called output.txt.",
+      "answer": "A report highlighting elements from the 2 files.",
+      "description": "Tests ability to generate content based on the content of 2 files.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "success_%": 100,
+        "run_time": "56.594 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicMemory": {
+      "data_path": "agbenchmark/challenges/memory/m1_id/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "2314",
+      "description": "Tests ability for the agent to remember information between each action. An id is presented initially and the agent has to remember it after reading 4 other files",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "success_%": 70,
+        "run_time": "52.129 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestAdaptLink": {
+      "data_path": "agbenchmark/challenges/adapatability/a3_book_price/data.json",
+      "is_regression": false,
+      "category": [
+        "adaptability"
+      ],
+      "task": "Write the price of the book in this url 'books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "An advanced version of this -> remove.html as well. Same as TestBasicRetrieval but link is slightly broken, supposed to be http:// at the start.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "success_%": 100,
+        "run_time": "33.589 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestRememberMultipleIds": {
+      "data_path": "agbenchmark/challenges/memory/m2_multiple/data.json",
+      "is_regression": false,
+      "category": [
+        "memory"
+      ],
+      "task": "Follow the instructions in the instructions_1.txt file",
+      "answer": "3145\n3791\n9317\n9471",
+      "description": "Tests ability for the agent to remember information between each action. Multiple ids are presented in different files and the last file instructs the agent to write these ids into another file.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "success_%": 40,
+        "run_time": "57.24 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "${os.path.join(Path.home(), 'miniagi')}"
+  }
+}

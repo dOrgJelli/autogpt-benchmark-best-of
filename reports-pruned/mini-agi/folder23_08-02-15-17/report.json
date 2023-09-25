@@ -1,0 +1,142 @@
+{
+  "command": "agbenchmark start",
+  "git_commit_sha": "2fc70aa0032eec986dfb1020854a1b3b8aaf6780",
+  "completion_time": "2023-08-02-15:30",
+  "benchmark_start_time": "2023-08-02-15:17",
+  "metrics": {
+    "run_time": "771.79 seconds",
+    "highest_difficulty": "intermediate: 4"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Print the the capital of America to a .txt file",
+      "answer": "Washington",
+      "description": "Tests the writing to file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "success_%": 100,
+        "cost": 0.052236,
+        "run_time": "25.539 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestPlanCreation": {
+      "data_path": "agbenchmark/challenges/content_gen/2_plan/data.json",
+      "is_regression": true,
+      "category": [
+        "content_gen"
+      ],
+      "task": "As an agent powered by a large language model, create a plan for yourself to execute on based on the task of booking a flight to Toronto. Output this plan into a .txt file.",
+      "answer": "1. Search for flights to Toronto.\n2. Select the cheapest flight.\n3. Book the flight.\n4. Pay for the flight.\n5. Confirm the flight.",
+      "description": "Tests ability to generate content based on the content of 2 files.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "success_%": 80,
+        "cost": 0.1595385,
+        "run_time": "54.27 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/interface/search/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "success_%": 100,
+        "cost": 0.05327699999999999,
+        "run_time": "27.824 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/interface/read_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the string 'random string' before any existing text to the file called file_to_check.txt",
+      "answer": "random string Hello World!",
+      "description": "This reads the file quickly",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "success_%": 100,
+        "cost": 0.0568695,
+        "run_time": "31.673 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicRetrieval": {
+      "data_path": "agbenchmark/challenges/retrieval/r1_book_price/data.json",
+      "is_regression": true,
+      "category": [
+        "retrieval"
+      ],
+      "task": "Write the price of the book in this url 'http://books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "Specifies specific website to retrieve website from.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "success_%": 90,
+        "cost": 0.07186749999999999,
+        "run_time": "29.221 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestDebugSimpleTypoWithGuidance": {
+      "data_path": "agbenchmark/challenges/code/c2_debug_suite/d2_debug/data.json",
+      "is_regression": true,
+      "category": [
+        "code",
+        "iterate"
+      ],
+      "task": "1- Run test.py.\n2- Read code.py.\n3- Modify code.py.\nRepeat step 1, 2 and 3 until test.py runs without errors.\n",
+      "answer": "[0, 1] [2, 5] [0, 3]",
+      "description": "Tests ability for the agent to debug python code with a simple typo in it.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "success_%": 100,
+        "cost": 0.22426650000000004,
+        "run_time": "60.035 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestAdaptSimpleTypoWithGuidance": {
+      "data_path": "agbenchmark/challenges/adapatability/a1_debug/data.json",
+      "is_regression": false,
+      "category": [
+        "adaptability"
+      ],
+      "task": "1- Run code.py.\n2- Read test.py.\n3- Modify test.py.\nRepeat step 1, 2 and 3 until code.py runs without errors.\n",
+      "answer": "Same as the original DebugWithGuidance test - [0, 1] [2, 5] [0, 3]",
+      "description": "A version of the debug challenge where the wrong files to test and change are given. The llm must figure the challenges out",
+      "metrics": {
+        "difficulty": "intermediate",
+        "success": true,
+        "success_%": 40,
+        "cost": 0.28248199999999996,
+        "run_time": "56.597 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "${os.path.join(Path.home(), 'miniagi')}"
+  }
+}

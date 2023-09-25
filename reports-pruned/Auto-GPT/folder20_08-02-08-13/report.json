@@ -1,0 +1,15 @@
+{
+  "command": "agbenchmark start",
+  "git_commit_sha": "3a2d08fb415071cc94dd6fcee24cfbdd1fb487dd",
+  "completion_time": "2023-08-02-08:15",
+  "benchmark_start_time": "2023-08-02-08:13",
+  "metrics": {
+    "run_time": "91.18 seconds",
+    "highest_difficulty": "No successful tests"
+  },
+  "tests": {},
+  "config": {
+    "workspace": "auto_gpt_workspace",
+    "entry_path": "agbenchmark.benchmarks"
+  }
+}

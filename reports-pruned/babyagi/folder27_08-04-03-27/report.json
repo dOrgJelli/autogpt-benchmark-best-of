@@ -1,0 +1,15 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/e89bdcca9e5b9631875eb9dd63fefd903032a29b",
+  "agent_git_commit_sha": "https://github.com/SilenNaihin/babyagi/tree/16f1b9519fea5543695203be0262a1b41c77cbba",
+  "completion_time": "2023-08-04-03:28",
+  "benchmark_start_time": "2023-08-04-03:27",
+  "metrics": {
+    "run_time": "91.45 seconds",
+    "highest_difficulty": "No successful tests"
+  },
+  "tests": {},
+  "config": {
+    "workspace": "babycoder/playground"
+  }
+}

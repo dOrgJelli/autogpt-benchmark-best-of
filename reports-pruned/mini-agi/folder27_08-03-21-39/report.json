@@ -1,0 +1,170 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/f43dc5107781bb9803ecd29d2e2e729eafb43fa6",
+  "agent_git_commit_sha": "https://github.com/SilenNaihin/mini-agi/tree/2fc70aa0032eec986dfb1020854a1b3b8aaf6780",
+  "completion_time": "2023-08-03-21:50",
+  "benchmark_start_time": "2023-08-03-21:39",
+  "metrics": {
+    "run_time": "669.62 seconds",
+    "highest_difficulty": "intermediate: 4"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Print the the capital of America to a .txt file",
+      "answer": "Washington",
+      "description": "Tests the writing to file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.025325499999999994,
+        "run_time": "15.788 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/interface/search/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.054183999999999996,
+        "run_time": "23.312 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/interface/read_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the string 'random string' before any existing text to the file called file_to_check.txt",
+      "answer": "random string Hello World!",
+      "description": "This reads the file quickly",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.030731500000000002,
+        "run_time": "22.988 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicRetrieval": {
+      "data_path": "agbenchmark/challenges/retrieval/r1_book_price/data.json",
+      "is_regression": true,
+      "category": [
+        "retrieval"
+      ],
+      "task": "Write the price of the book in this url 'http://books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "Specifies specific website to retrieve website from.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 80,
+        "cost": 0.07053749999999999,
+        "run_time": "25.027 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestDebugSimpleTypoWithGuidance": {
+      "data_path": "agbenchmark/challenges/code/c2_debug_suite/d2_debug/data.json",
+      "is_regression": true,
+      "category": [
+        "code",
+        "iterate"
+      ],
+      "task": "1- Run test.py.\n2- Read code.py.\n3- Modify code.py.\nRepeat step 1, 2 and 3 until test.py runs without errors.\n",
+      "answer": "[0, 1] [2, 5] [0, 3]",
+      "description": "Tests ability for the agent to debug python code with a simple typo in it.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.17726150000000002,
+        "run_time": "56.734 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicContentGen": {
+      "data_path": "agbenchmark/challenges/content_gen/1_summary/data.json",
+      "is_regression": true,
+      "category": [
+        "content_gen"
+      ],
+      "task": "Create a brief report or summary highlighting how one or more companies from companies.txt are addressing or capitalizing on challenges or trends from challenges.txt. Write a file called output.txt.",
+      "answer": "A report highlighting elements from the 2 files.",
+      "description": "Tests ability to generate content based on the content of 2 files.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": 0.14527500000000002,
+        "run_time": "49.681 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestAdaptLink": {
+      "data_path": "agbenchmark/challenges/adapatability/a3_book_price/data.json",
+      "is_regression": false,
+      "category": [
+        "adaptability"
+      ],
+      "task": "Write the price of the book in this url 'books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "An advanced version of this -> remove.html as well. Same as TestBasicRetrieval but link is slightly broken, supposed to be http:// at the start.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "attempted": true,
+        "success_%": 50,
+        "cost": 0.103929,
+        "run_time": "36.02 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestDebugSimpleTypoWithoutGuidance": {
+      "data_path": "agbenchmark/challenges/code/c2_debug_suite/d2.1_vague/data.json",
+      "is_regression": true,
+      "category": [
+        "code",
+        "iterate"
+      ],
+      "task": "Make test.py run without errors.",
+      "answer": "[0, 1] [2, 5] [0, 3]",
+      "description": "Tests ability for the agent to debug python code with a simple typo in it, using a very broad prompt without guidance",
+      "metrics": {
+        "difficulty": "intermediate",
+        "success": true,
+        "attempted": true,
+        "success_%": 80,
+        "cost": 0.16387700000000002,
+        "run_time": "48.141 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "${os.path.join(Path.home(), 'miniagi')}"
+  }
+}

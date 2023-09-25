@@ -1,0 +1,169 @@
+{
+  "command": "agbenchmark start",
+  "benchmark_git_commit_sha": "https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/e0a72b86c1c9bda9db2482694626a742786b1a4f",
+  "agent_git_commit_sha": "https://github.com/SilenNaihin/mini-agi/tree/2fc70aa0032eec986dfb1020854a1b3b8aaf6780",
+  "completion_time": "2023-08-07-20:25",
+  "benchmark_start_time": "2023-08-07-20:11",
+  "metrics": {
+    "run_time": "846.74 seconds",
+    "highest_difficulty": "basic: 2"
+  },
+  "tests": {
+    "TestWriteFile": {
+      "data_path": "agbenchmark/challenges/interface/write_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the word 'Washington' to a .txt file",
+      "answer": "The word 'Washington', printed to a .txt file named anything",
+      "description": "Tests the agents ability to write to a file",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.05143199999999999,
+        "run_time": "14.771 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestSearch": {
+      "data_path": "agbenchmark/challenges/interface/search/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Open 'https://silennaihin.com/random/plain.html' and paste the text on the page in a .txt file",
+      "answer": "This is a Heading\nThis is a paragraph.",
+      "description": "Tests if an llm can search",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.05316699999999999,
+        "run_time": "21.471 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestReadFile": {
+      "data_path": "agbenchmark/challenges/interface/read_file/data.json",
+      "is_regression": true,
+      "category": [
+        "interface"
+      ],
+      "task": "Write the string 'random string' before any existing text to the file called file_to_check.txt",
+      "answer": "random string Hello World!",
+      "description": "This reads the file quickly",
+      "metrics": {
+        "difficulty": "interface",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.08819750000000001,
+        "run_time": "32.417 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestBasicRetrieval": {
+      "data_path": "agbenchmark/challenges/retrieval/r1_book_price/data.json",
+      "is_regression": true,
+      "category": [
+        "retrieval"
+      ],
+      "task": "Write the price of the book in this url 'http://books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "Specifies specific website to retrieve website from.",
+      "metrics": {
+        "difficulty": "basic",
+        "success": true,
+        "attempted": true,
+        "success_%": 100,
+        "cost": 0.07508150000000001,
+        "run_time": "37.105 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestDebugSimpleTypoWithGuidance": {
+      "data_path": "agbenchmark/challenges/code/c2_debug_suite/d2.1_guided/data.json",
+      "is_regression": false,
+      "category": [
+        "code",
+        "iterate"
+      ],
+      "task": "1- Run test.py.\n2- Read code.py.\n3- Modify code.py.\nRepeat step 1, 2 and 3 until test.py runs without errors.\n",
+      "answer": "[0, 1] [2, 5] [0, 3]",
+      "description": "Tests ability for the agent to debug python code with a simple typo in it.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "attempted": true,
+        "success_%": 90,
+        "cost": 0.3085005,
+        "run_time": "80.194 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestAdaptLink": {
+      "data_path": "agbenchmark/challenges/adapatability/a3_book_price/data.json",
+      "is_regression": false,
+      "category": [
+        "adaptability"
+      ],
+      "task": "Write the price of the book in this url 'books.toscrape.com/catalogue/meditations_33/index.html' to a .txt file.",
+      "answer": "£25.89",
+      "description": "An advanced version of this -> remove.html as well. Same as TestBasicRetrieval but link is slightly broken, supposed to be http:// at the start.",
+      "metrics": {
+        "difficulty": "novice",
+        "success": true,
+        "attempted": true,
+        "success_%": 90,
+        "cost": 0.10633850000000002,
+        "run_time": "37.796 seconds"
+      },
+      "reached_cutoff": false
+    },
+    "TestAdaptSimpleTypoWithGuidance": {
+      "data_path": "agbenchmark/challenges/adapatability/a1_debug/data.json",
+      "is_regression": false,
+      "category": [
+        "adaptability"
+      ],
+      "task": "1- Run code.py.\n2- Read test.py.\n3- Modify test.py.\nRepeat step 1, 2 and 3 until code.py runs without errors.\n",
+      "answer": "Same as the original DebugWithGuidance test - [0, 1] [2, 5] [0, 3]",
+      "description": "A version of the debug challenge where the wrong files to test and change are given. The llm must figure the challenges out",
+      "metrics": {
+        "difficulty": "intermediate",
+        "success": true,
+        "attempted": true,
+        "success_%": 30,
+        "cost": 0.34087749999999994,
+        "run_time": "81.638 seconds"
+      },
+      "reached_cutoff": true
+    },
+    "TestAdaptTeslaRevenue": {
+      "data_path": "agbenchmark/challenges/adapatability/a2_tesla_revenue/data.json",
+      "is_regression": false,
+      "category": [
+        "adaptability"
+      ],
+      "task": "I'm a financial planner, please help me write tesla's r in 2022 into a .txt file.",
+      "answer": "It was $81.462 billion in 2022.",
+      "description": "Given context adapt to the missing of the word revenue",
+      "metrics": {
+        "difficulty": "intermediate",
+        "success": true,
+        "attempted": true,
+        "success_%": 20,
+        "cost": 0.12958799999999998,
+        "run_time": "43.478 seconds"
+      },
+      "reached_cutoff": false
+    }
+  },
+  "config": {
+    "workspace": "${os.path.join(Path.home(), 'miniagi')}"
+  }
+}
